@@ -1,0 +1,76 @@
+@keyframes header {
+    0% {
+        height: 0px;
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.smallHeader {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    animation-name: header;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallLogo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.smallHeaderLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.smallMenu {
+    position: absolute;
+    left: 20px;
+}
+
+.slideNav {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.slideNav p {
+    padding: 8px 80px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.slideNav p:hover {
+    color: #f1f1f1;
+}
+
+.slideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+}

@@ -1,0 +1,25 @@
+@keyframes skillTextFrame {
+    0% {
+        top: calc(50% - 50px);
+    }
+
+    100% {
+        top:calc(0% + 100px);
+
+    }
+}
+
+.skill {
+    position: relative;
+    height: 50px;
+}
+
+.skillText {
+    animation-name: skillTextFrame;
+
+    animation-timing-function: cubic-bezier();
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    position: absolute;
+}
