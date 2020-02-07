@@ -7,17 +7,11 @@ const useStyles = makeStyles(theme => ({
         fontSize : 25
     },
     image : {
-        width: 50,
-        height: 50,
+        width: 25,
+        height: 25,
     },
     title : {
-        fontSize : 20,
-    },
-    subtitle : {
-        fontSize : 11,
-    },
-    content : {
-        fontSize : 12,
+        fontSize : 15,
     },
     imgContainer : {
         margin: '0px 10px 0px 10px'
@@ -26,16 +20,16 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-start',
+        overflow: 'hidden',
+        height: 'auto',
+        width: 'auto',
     }, 
-    titleContainer : {
-        display: 'flex',
-    },
     textContainer : {
-
+        display: 'flex',
     }
 }));
 
-export default function SkillComponent({image, title, subtitle, content}) {
+export default function MinSkillComponent({image, title, subtitle, content}) {
 
     const classes = useStyles();
 
@@ -45,12 +39,8 @@ export default function SkillComponent({image, title, subtitle, content}) {
                 <img src={image} className={classes.image}/>
             </div>
             <div className={classes.textContainer}>
-                <div className={classes.titleContainer}>
-                    <Typography className={classes.title}>{title}</Typography>
-                    <Typography className={classes.subtitle}>&nbsp;&nbsp;{subtitle}</Typography>
-                </div>
-                <Typography className={classes.content}>{content}</Typography>
+                <Typography className={classes.title}>{title} : {content}</Typography>
             </div>
         </div>
-    );
+    )
 }

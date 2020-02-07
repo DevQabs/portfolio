@@ -26,20 +26,23 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#2B2B38',
+        overflow:'hidden',
     },
     skill : {
-        width: 1400,
-        minWidth: 800,
-        top:110,
-        botton:0,
-        height:'calc(100% - 200px)',
+        overflow:'hidden',
+        width: 'auto',
+        height:'auto',
         color: theme.palette.common.white,
-        // backgroundColor:red[50],
         fontSize: 50,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        skillText: ''
+    },
+    SkillText : {
+        overflow:'hidden',
+        width: 'auto',
+        display: 'flex',
+        padding: '0px 100px 0px 0px'
     },
     skillFlexContainer : {
         display: 'flex',
@@ -99,15 +102,16 @@ export default function Skill(props) {
                         data-aos-duration="500"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
-                        data-aos-once="false"
+                        data-aos-once="true"
                         data-aos-anchor-placement="top-center">
                         <div className={classes.skill}>
-                            <div className="skillText">
+                            <div className={classes.SkillText}>
                                 Skill
                             </div>
                             <div className={classes.skillFlexContainer} 
                                 data-aos="fade-up" 
-                                data-aos-delay="900">
+                                data-aos-delay="900"
+                                data-aos-once="true">
                                 <FrontendContainer/>
                                 <BackendContainer/>
                                 <DevopsContainer/>
@@ -124,10 +128,10 @@ export default function Skill(props) {
                         data-aos-duration="500"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
-                        data-aos-once="false"
+                        data-aos-once="true"
                         data-aos-anchor-placement="top-center">
                         <div className={classes.skill}>
-                            <div className="skillText">
+                            <div className={classes.SkillText}>
                                 Skill
                             </div>
                             <div className={classes.skillColumnContainer} 
