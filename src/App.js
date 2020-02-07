@@ -8,10 +8,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import {RemoveScrollBar} from 'react-remove-scroll-bar';
+
 const useStyles = makeStyles(theme => ({
     app : {
         width: '100%',
-        // height: 2100,
+        //height: '100vh',
     },
     firstPage : {
         width: '100%',
@@ -39,6 +41,7 @@ export default function App() {
     return (
         <div className={classes.app}>
         <CssBaseline/>
+        <RemoveScrollBar />
             <div className={classes.firstPage}>
                 <div className={classes.head}>
                     <Header/>

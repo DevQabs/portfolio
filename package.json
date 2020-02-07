@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "deploy" : "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -37,9 +37,12 @@
     "file-loader": "^4.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
+    "react-awesome-slider": "^4.0.2",
     "react-dom": "^16.11.0",
+    "react-full-page": "^0.1.7",
     "react-intl": "^3.7.0",
     "react-markdown": "^4.2.2",
+    "react-remove-scroll-bar": "^2.0.0",
     "react-router-dom": "^5.1.2",
     "react-scroll": "^1.7.14",
     "react-syntax-highlighter": "^11.0.2",
