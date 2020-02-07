@@ -1,11 +1,6 @@
 import React, { useEffect, useState, useLayoutEffect } from 'react';
-import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
-import CodeIcon from '@material-ui/icons/Code';
-import StorageIcon from '@material-ui/icons/Storage';
-import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
-import { red, blue, grey, yellow, blueGrey } from '@material-ui/core/colors';
-import { Typography } from '@material-ui/core';
+import Scroll from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../../css/skill.css';
@@ -53,7 +48,35 @@ const useStyles = makeStyles(theme => ({
         display: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    bottomArrowBtn : {
+        position:'absolute',
+        bottom:'0px',
+    },
+    upArrowBtn : {
+        position:'absolute',
+        top: '50px',
+    },
+    arrow : {
+        display: 'inline-block',
+        width: '30px',
+        height: '30px',
+        borderRight: '2px solid #FFF',
+        borderTop: '2px solid #FFF',
+        cursor:'pointer',
+    },
+    arrowBottom : {
+        transform: 'rotate(135deg)',
+        '&:hover' : {
+            transform:'scale(1.2) rotate(135deg)',
+        }
+    },
+    arrowUp : {
+        transform: 'rotate(315deg)',
+        '&:hover' : {
+            transform:'scale(1.2) rotate(315deg)',
+        }
+    },
 })); 
 
 // size 구하기
@@ -91,6 +114,15 @@ export default function Skill(props) {
 
     const classes = useStyles();
     const [width, height] = useWindowSize();
+    const scroll = Scroll.animateScroll;
+
+    function bottomArrowClick(e) {
+        scroll.scrollTo(height);
+    }
+
+    function upArrowClick(e) {
+        scroll.scrollTo(-height);
+    }
 
     if (onScroll().getScrollY() >= (height/10)) {
         if (width >= 1250) {
@@ -116,6 +148,14 @@ export default function Skill(props) {
                                 <BackendContainer/>
                                 <DevopsContainer/>
                             </div>
+
+                            {/* 화살표 Div */}
+                            <div className={classes.upArrowBtn}>
+                                <div className={`${classes.arrow} ${classes.arrowUp}`} onClick={upArrowClick}/>
+                            </div>
+                            <div className={classes.bottomArrowBtn}>
+                                <div className={`${classes.arrow} ${classes.arrowBottom}`} onClick={bottomArrowClick}/>
+                            </div>
                         </div>
                 </div>
             );
@@ -140,6 +180,14 @@ export default function Skill(props) {
                                 <MinFrontendContainer/>
                                 <MinBackendContainer/>
                                 <MinDevopsContainer/>
+                            </div>
+
+                            {/* 화살표 Div */}
+                            <div className={classes.bottomArrowBtn}>
+                                <div className={`${classes.arrow} ${classes.arrowBottom}`} />
+                            </div>
+                            <div className={classes.upArrowBtn}>
+                                <div className={`${classes.arrow} ${classes.arrowUp}`} />
                             </div>
                         </div>
                 </div>
