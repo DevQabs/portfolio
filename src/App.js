@@ -50,7 +50,7 @@ export default function App() {
     return (
         <div className={classes.app}>
         <CssBaseline/>
-        {/*<RemoveScrollBar />*/}
+        <RemoveScrollBar/>
             <div className={classes.firstPage}>
                 <div className={classes.head}>
                     <Header/>
