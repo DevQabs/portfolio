@@ -167,7 +167,7 @@ export default function Headers(props) {
                             <p onClick={introClick}>Intro</p>
                             <p onClick={skillClick}>Skill</p>
                             <p onClick={projectClick}>Project</p>
-                            <p onClick={studyClick}>Study</p>
+                            {/*<p onClick={studyClick}>Study</p>*/}
                             <p onClick={aboutClick}>About</p>
                         </div>
                     </div>
@@ -201,6 +201,7 @@ export default function Headers(props) {
                     <span className={classes.marked}/>
                     </Typography>
                 </div>
+                {/* 
                 <div className={classes.studyContainer}>
                     <Typography
                     component="span"
@@ -211,6 +212,7 @@ export default function Headers(props) {
                     <span className={classes.marked}/>
                     </Typography>
                 </div>
+                */}
                 <div className={classes.aboutMeContainer}>
                     <Typography
                     component="span"

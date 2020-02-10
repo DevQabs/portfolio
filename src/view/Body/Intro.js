@@ -89,7 +89,7 @@ export default function main() {
                 <div className={classes.buttonDiv}>
                     <div className={classes.buttonSpan}>&#123;</div>
                     <div className={`${classes.button} btn effect01`} onClick={handleClick}>
-                        <span>View My Skill</span>
+                        <span>View My log</span>
                     </div>
                     <div className={classes.buttonSpan}>&#125;</div>
                 </div>

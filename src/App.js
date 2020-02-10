@@ -4,6 +4,7 @@ import Header from './view/Header';
 import Intro from './view/Body/Intro';
 import Skill from './view/Body/Skill';
 import About from './view/Body/About';
+import Project from './view/Body/Project';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
@@ -59,6 +60,9 @@ export default function App() {
                 </div>
                 <div className={classes.Skill}>
                     <Skill/>
+                </div>
+                <div className={classes.About}>
+                    <Project/>
                 </div>
                 <div className={classes.About}>
                     <About/>

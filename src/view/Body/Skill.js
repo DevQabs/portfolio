@@ -120,7 +120,7 @@ export default function Skill(props) {
         scroll.scrollTo(-height);
     }
     function bottomClick(e) {
-        scroll.scrollToBottom();
+        scroll.scrollTo(height*2);
     }
 
     if (onScroll().getScrollY() >= (height/10)) {

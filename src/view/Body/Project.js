@@ -17,7 +17,7 @@ export default function About() {
     const classes = useStyles();
     return (
         <div className={classes.container}>
-            어바웃 페이지
+            프로젝트 페이지
         </div>
     )
 }
