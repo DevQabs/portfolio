@@ -80,8 +80,8 @@ const useStyles = makeStyles(theme => ({
 })); 
 
 // size 구하기
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
+function getWindowSize() {
+    const [size, setSize] = useState([0,0]);
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -113,15 +113,14 @@ export default function Skill(props) {
     AOS.init();
 
     const classes = useStyles();
-    const [width, height] = useWindowSize();
+    const [width, height] = getWindowSize();
     const scroll = Scroll.animateScroll;
 
-    function bottomArrowClick(e) {
-        scroll.scrollTo(height);
-    }
-
-    function upArrowClick(e) {
+    function handleClick(e) {
         scroll.scrollTo(-height);
+    }
+    function bottomClick(e) {
+        scroll.scrollToBottom();
     }
 
     if (onScroll().getScrollY() >= (height/10)) {
@@ -151,10 +150,10 @@ export default function Skill(props) {
 
                             {/* 화살표 Div */}
                             <div className={classes.upArrowBtn}>
-                                <div className={`${classes.arrow} ${classes.arrowUp}`} onClick={upArrowClick}/>
+                                <div className={`${classes.arrow} ${classes.arrowUp}`}  onClick={handleClick}/>
                             </div>
                             <div className={classes.bottomArrowBtn}>
-                                <div className={`${classes.arrow} ${classes.arrowBottom}`} onClick={bottomArrowClick}/>
+                                <div className={`${classes.arrow} ${classes.arrowBottom}`} onClick={bottomClick}/>
                             </div>
                         </div>
                 </div>
@@ -183,11 +182,11 @@ export default function Skill(props) {
                             </div>
 
                             {/* 화살표 Div */}
-                            <div className={classes.bottomArrowBtn}>
-                                <div className={`${classes.arrow} ${classes.arrowBottom}`} />
-                            </div>
                             <div className={classes.upArrowBtn}>
-                                <div className={`${classes.arrow} ${classes.arrowUp}`} />
+                                <div className={`${classes.arrow} ${classes.arrowUp}`}  onClick={handleClick}/>
+                            </div>
+                            <div className={classes.bottomArrowBtn}>
+                                <div className={`${classes.arrow} ${classes.arrowBottom}`} onClick={bottomClick}/>
                             </div>
                         </div>
                 </div>
