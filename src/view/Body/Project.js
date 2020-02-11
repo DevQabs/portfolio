@@ -26,6 +26,10 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         height:'80vh',
         width:'100%',
+    },
+    upBtnDiv : {
+        position: 'absolute',
+        top: '50px',
     }
 })); 
 
@@ -65,6 +69,7 @@ export default function About() {
                 Project
             </div>
             <div className={classes.container}>
+                <UpButton height={height}/><DownButton height={height*3}/>
                 <ProjectCard img={spring} title="스프링 게시판" content="spring 활용한 게시판"/>
                 <ProjectCard img={react} title="web 그림판" content="react 활용한 그림판"/>
             </div>

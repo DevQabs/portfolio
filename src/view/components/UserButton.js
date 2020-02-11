@@ -5,11 +5,11 @@ import Scroll from 'react-scroll';
 const useStyles = makeStyles(theme => ({
     bottomArrowBtn : {
         position:'absolute',
-        bottom:'0px',
+        bottom:'10px',
     },
     upArrowBtn : {
         position:'absolute',
-        top: '50px',
+        top: '70px',
     },
     arrow : {
         display: 'inline-block',
