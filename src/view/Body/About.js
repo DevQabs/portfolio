@@ -42,6 +42,11 @@ export default function About() {
                 </ul>
             </Typography>
             </div>
+            <div>
+                {/* 깃 */}
+                {/*  */}
+                {/* 메일 */}
+            </div>
         </div>
     )
 }
