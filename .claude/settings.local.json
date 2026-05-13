@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(curl -sL \"https://avatars.githubusercontent.com/u/35584261?v=4\" -o /Users/ktg2926/Downloads/magicuidesign-portfolio-5ef12e4/public/me.png)",
+      "Bash(gh repo *)",
+      "Bash(pnpm build *)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
