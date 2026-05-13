@@ -13,7 +13,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(gh run *)",
-      "Bash(git commit -m 'fix: use npm instead of pnpm in GitHub Actions workflow *)"
+      "Bash(git commit -m 'fix: use npm instead of pnpm in GitHub Actions workflow *)",
+      "Bash(git commit -m 'feat: add vibe coding and AI app development to Wehago Healthcare *)",
+      "Bash(git commit *)"
     ]
   }
 }
