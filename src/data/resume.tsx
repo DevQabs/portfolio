@@ -149,15 +149,6 @@ export const DATA = {
         'Docker',
         'MSA',
       ],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://www.wehagoh.com/',
-          icon: <Icons.globe className='size-3' />,
-        },
-      ],
-      image: '',
-      video: '',
     },
     {
       title: 'BIR Tax Agent System',
@@ -167,15 +158,6 @@ export const DATA = {
       description:
         '필리핀 국세청(Bureau of Internal Revenue) 전자세금계산서 발행 시스템.\n\n- MSA 아키텍처 구축 (API Gateway, Nexus, Redis)\n- Kafka 기반으로 **일 평균 2억 5천만 건** 데이터 처리\n- 필리핀 대기업 대상 Open API 및 SDK 배포\n- 글로벌 팀과 영문으로 협업',
       technologies: ['Java', 'Spring Boot', 'Kafka', 'Oracle', 'Redis', 'API Gateway', 'MSA', 'Docker'],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://eis.bir.gov.ph/#/main',
-          icon: <Icons.globe className='size-3' />,
-        },
-      ],
-      image: '',
-      video: '',
     },
     {
       title: '위하고 할일 서비스',
@@ -185,15 +167,6 @@ export const DATA = {
       description:
         "더존비즈온 그룹웨어 플랫폼 '위하고' 내 할일 관리 서비스.\n\n- MSA 기반 마이크로서비스 개발 및 유지보수\n- React + Spring + PostgreSQL 풀스택 개발\n- 서비스 성능 개선 및 안정화",
       technologies: ['Java', 'Spring', 'React', 'PostgreSQL', 'MSA'],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://www.wehago.com',
-          icon: <Icons.globe className='size-3' />,
-        },
-      ],
-      image: '',
-      video: '',
     },
     {
       title: '현대종합특수강 MES/SCM',
@@ -203,9 +176,6 @@ export const DATA = {
       description:
         '현대종합특수강의 포항 SCM 및 중국 공장 MES 품질 시스템 구축.\n\n- Java 기반 제조 실행 시스템 개발\n- Oracle Procedure / Function 중심 데이터 처리 로직 구현\n- 제조업 비즈니스 도메인 이해',
       technologies: ['Java', 'Oracle', 'Xplatform', 'SCM', 'MES'],
-      links: [],
-      image: '',
-      video: '',
     },
   ],
   hackathons: [],
