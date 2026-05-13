@@ -82,7 +82,7 @@ export const DATA = {
       start: "Jul 2023",
       end: undefined,
       description:
-        "• MSA 아키텍처 설계 및 구축\n• Kafka CDC & Apache Flink 기반 실시간 데이터 집계\n• Elasticsearch 기반 검색 및 오류 수집 시스템 구현\n• Backend 공통 기능 및 프로세스 개발 총괄\n• Agile sprint 방식으로 개발 업무 진행\n• TDD 주도 개발 및 코드 리뷰로 서비스 코드 품질 개선 주도\n• EMR 도메인 전반 이해 및 적용",
+        "• MSA 아키텍처 설계 및 구축\n• Kafka CDC & Apache Flink 기반 실시간 데이터 집계\n• Elasticsearch 기반 검색 및 오류 수집 시스템 구현\n• Backend 공통 기능 및 프로세스 개발 총괄\n• Agile sprint 방식으로 개발 업무 진행\n• TDD 주도 개발 및 코드 리뷰로 서비스 코드 품질 개선 주도\n• EMR 도메인 전반 이해 및 적용\n• 바이브코딩 기반 AI 어플리케이션 구축",
     },
     {
       company: "BIR Tax Agent System",
