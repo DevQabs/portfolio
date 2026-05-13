@@ -18,9 +18,9 @@ export const DATA = {
   url: 'https://devqabs.github.io',
   location: 'Seoul, Korea',
   locationLink: 'https://www.google.com/maps/place/Seoul',
-  description: 'Java/Spring Backend 전문 · MSA 아키텍처 & 대용량 데이터 처리',
+  description: 'Backend 전문 · MSA 아키텍처 & 대용량 데이터 처리',
   summary:
-    '더존비즈온에서 웹 · 백엔드 개발을 담당하고 있습니다. \nT자형 인재를 추구하며 다양한 프로젝트를 팀장으로 리드했습니다.\n 항상 프로젝트에 자부심을 가지고 책임감 있게 개발합니다.\n\n**🎖 자격증**\n\n- [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0926a6dc-0c6b-49d9-b44a-c088a6459dfe/public_url)\n- [Certified Kubernetes Administrator (CKA)](https://www.credly.com/badges/9eca1576-16bb-4b4a-bcf7-04f8a29c52b9/public_url)\n- 정보처리기사\n- 컴퓨터활용능력 1급',
+    '더존비즈온에서 웹 · 백엔드 개발을 담당하고 있습니다.\n\nT자형 인재를 추구하며 다양한 프로젝트를 팀장으로 리드했습니다.\n\n항상 프로젝트에 자부심을 가지고 책임감 있게 개발합니다.\n\n**🎖 자격증**\n\n- [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0926a6dc-0c6b-49d9-b44a-c088a6459dfe/public_url)\n- [Certified Kubernetes Administrator (CKA)](https://www.credly.com/badges/9eca1576-16bb-4b4a-bcf7-04f8a29c52b9/public_url)\n- 정보처리기사\n- 컴퓨터활용능력 1급',
   avatarUrl: '/me.png',
   skills: [
     { name: 'Java', icon: Java },
